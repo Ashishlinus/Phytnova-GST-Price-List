@@ -46,6 +46,73 @@
     th {
       background: #f2f2f2;
     }
+	  <style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  /* 🔎 Search Box */
+  #searchBox {
+    margin: 10px 0;
+    width: 90%;
+    max-width: 350px;
+    height: 36px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+  }
+
+  /* 📋 Table */
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  th {
+    background: #f2f2f2;
+  }
+
+  /* Bold MRP column */
+  #productTable td:nth-child(5),
+  #productTable th:nth-child(5) {
+    font-weight: bold;
+  }
+
+  /* 🔹 Mobile Adjustments */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 12px;
+    }
+    #searchBox {
+      font-size: 12px;
+      height: 32px;
+    }
+    table {
+      font-size: 11px;
+    }
+    th, td {
+      padding: 4px;
+    }
+  }
+</style>
+
 
     /* 🔹 Mobile Adjustments */
     @media screen and (max-width: 600px) {
@@ -538,6 +605,7 @@
 
 </body>
 </html>
+
 
 
 
